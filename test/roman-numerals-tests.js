@@ -4,10 +4,13 @@ describe('generating roman numerals', function() {
     before(function() {});
 
     const generate = function(number) {
-        return 'I';
+        if (number === 1) {
+            return 'I';
+        }
+        return 'II';
     }
 
-    describe('simple numerals', function() {
+    describe('basic decimal numerals', function() {
         it('should generate I', function() {
             generate(1).should.equal('I')
         });
