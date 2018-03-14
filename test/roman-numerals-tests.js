@@ -39,13 +39,13 @@ describe('generating roman numerals', function() {
             Generate(4).should.equal(Numerals.I + Numerals.V)
         });
 
-        xit('should generate IX', function() {
+        it('should generate IX', function() {
             Generate(9).should.equal(Numerals.I + Numerals.X)
         });
     })
 
     describe('additive numerals', function() {
-        xit('should generate VI', function() {
+        it('should generate VI', function() {
             Generate(6).should.equal(Numerals.V + Numerals.I)
         });
     })
