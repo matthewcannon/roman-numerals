@@ -23,11 +23,23 @@ describe('generating roman numerals', function() {
         it('should generate V', function() {
             Generate(5).should.equal(Numerals.V)
         });
+
+        xit('should generate X', function() {
+            Generate(10).should.equal(Numerals.X)
+        });
+
+        xit('should generate C', function() {
+            Generate(100).should.equal(Numerals.C)
+        });
     });
 
     describe('subtractive numerals', function() {
-        xit('should generate IV', function() {
+        it('should generate IV', function() {
             Generate(4).should.equal(Numerals.I + Numerals.V)
+        });
+
+        xit('should generate IX', function() {
+            Generate(9).should.equal(Numerals.I + Numerals.X)
         });
     })
 
