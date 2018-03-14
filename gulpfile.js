@@ -29,8 +29,6 @@ gulp.task('tdd', function() {
             .pipe(mocha({
                 reporter: 'list'
             }))
-            .on('error', function(err) {
-                console.log(err.stack);
-            });
+            .on('error', function(err) {});
     }));
 });

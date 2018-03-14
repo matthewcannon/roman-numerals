@@ -3,6 +3,7 @@ import {
     Generate,
     Numerals
 } from '../lib/roman-numerals';
+import R from 'ramda';
 
 describe('generating roman numerals', function() {
     before(function() {});
