@@ -16,7 +16,6 @@ gulp.task('test', function() {
             }
         }))
         .once('error', function(err) {
-            console.log(err.stack);
             process.exit(1);
         })
         .once('end', function() {

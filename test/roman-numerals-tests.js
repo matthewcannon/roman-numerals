@@ -1,11 +1,19 @@
 import 'should';
 
-describe('converting to roman numerals', function() {
+describe('generating roman numerals', function() {
     before(function() {});
 
-    describe('always', function() {
-        it('should fail', function() {
-            '1'.should.equal('I')
+    const generate = function(number) {
+        return 'I';
+    }
+
+    describe('simple numerals', function() {
+        it('should generate I', function() {
+            generate(1).should.equal('I')
+        });
+
+        it('should generate II', function() {
+            generate(2).should.equal('II')
         });
     });
 });
