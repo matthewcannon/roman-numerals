@@ -16,6 +16,7 @@ gulp.task('test', function() {
             }
         }))
         .once('error', function(err) {
+            console.log(err)
             process.exit(1);
         })
         .once('end', function() {
@@ -29,6 +30,8 @@ gulp.task('tdd', function() {
             .pipe(mocha({
                 reporter: 'list'
             }))
-            .on('error', function(err) {});
+            .on('error', function(err) {
+                console.log(err)
+            });
     }));
 });

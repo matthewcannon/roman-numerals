@@ -32,6 +32,22 @@ describe('generating roman numerals', function() {
         it('should generate C', function() {
             Generate(100).should.equal(Numerals.C)
         });
+
+        it('should generate XL', function() {
+            Generate(40).should.equal(Numerals.X + Numerals.L)
+        });
+
+        it('should generate L', function() {
+            Generate(50).should.equal(Numerals.L)
+        });
+
+        it('should generate XC', function() {
+            Generate(90).should.equal(Numerals.X + Numerals.C)
+        });
+
+        it('should generate D', function() {
+            Generate(500).should.equal(Numerals.D)
+        });
     });
 
     describe('subtractive numerals', function() {
@@ -49,4 +65,10 @@ describe('generating roman numerals', function() {
             Generate(6).should.equal(Numerals.V + Numerals.I)
         });
     })
+
+    describe('complex numerals', function() {
+        it('should generate MCMLXXXIV', function() {
+            Generate(1984).should.equal('MCMLXXXIV')
+        });
+    });
 });
