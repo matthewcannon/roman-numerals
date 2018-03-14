@@ -15,5 +15,9 @@ describe('generating roman numerals', function() {
         it('should generate II', function() {
             Generate(2).should.equal(Numerals.I + Numerals.I)
         });
+
+        it('should generate III', function() {
+            Generate(3).should.equal(Numerals.I + Numerals.I + Numerals.I)
+        });
     });
 });
