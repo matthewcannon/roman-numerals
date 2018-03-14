@@ -25,11 +25,11 @@ describe('generating roman numerals', function() {
             Generate(5).should.equal(Numerals.V)
         });
 
-        xit('should generate X', function() {
+        it('should generate X', function() {
             Generate(10).should.equal(Numerals.X)
         });
 
-        xit('should generate C', function() {
+        it('should generate C', function() {
             Generate(100).should.equal(Numerals.C)
         });
     });
